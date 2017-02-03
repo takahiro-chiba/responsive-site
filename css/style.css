@@ -1,0 +1,99 @@
+body {
+     margin: 0; padding: 0;
+     
+}
+
+footer{
+     background-color: #f0e68c;
+}
+
+
+
+
+
+/* CSS　モバイルファースト */
+
+#key_visual{                    /* メインビジュアルの画像*/
+	width: 100%;
+	height: 300px;
+	background-image:url("../images/main.jpg");
+	background-size:cover;     /* 画像の幅と高さの比率は固定されたまま、背景の表示領域を覆うように表示*/
+}
+
+.text-center {　　              /*h1見出し部分*/
+     margin: 10px;
+     padding: 10px;
+     text-align: center; 
+}
+
+#section {                      /*魅力3項目の部分*/
+     text-align: center;
+     margin: 0 auto;            /*センタリング*/
+     width: 80%;
+}
+
+.botton {
+    width: 300px;
+    font-size: 24px;
+    margin: 5px auto;           /*中央寄せ & 上下に5pxの幅*/
+    font-weight:bold;           /*文字の太さ   bold=太字*/
+    text-decoration:none;       /*テキストの下線・上線・打ち消し線・点滅*/
+    display:block;              /*インラインボックス<a>をブロック化*/
+    text-align:center;
+    padding: 10px;
+    color:#FFFFFF;
+    background-color: #49a9d4;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* CSS　メディアクエリ　768ox以上(ipadやPC)で適用されるCSS */
+
+@media (min-width: 768px) {　　 /*ブラウザサイズが768px以上の時*/
+#key_visual{
+	width: 100%;
+	height: 500px;　　　　　　 /*Lesson課題で指定された高さ500pxの設定*/
+	background-image:url("../images/main.jpg");
+	background-size:cover;     /* 画像の幅と高さの比率は固定されたまま、背景の表示領域を覆うように表示*/
+}
+
+.text-center {                  /*h1見出し部分*/
+     margin: 10px;
+     padding: 10px;
+     text-align: center; 
+}
+
+
+#section {                    　/*魅力3項目の部分*/
+     text-align: center;
+     display:flex;     　　　　 /* 横並び*/
+     margin: 0 auto;　　　　　　/*センタリング*/
+     width: 80%;
+}
+
+h2{
+     text-align: center;        /*h2の見出し部分を中央寄せでセンタリング*/
+}
+
+p{
+     text-align: center;　　　　/*pの見出し部分を中央寄せでセンタリング*/
+}
+
+.botton {
+    width: 300px;
+    font-size: 24px;
+    margin: 5px auto;           /*中央寄せ & 上下に5pxの幅*/
+    font-weight:bold;           /*文字の太さ   bold=太字*/
+    text-decoration:none;       /*テキストの下線・上線・打ち消し線・点滅*/
+    display:block;              /*インラインボックス<a>をブロック化*/
+    text-align:center;
+    padding: 10px;
+    color:#FFFFFF;
+    background-color: #49a9d4;
+    border-radius: 20px;
+}
+
+}
